@@ -8,10 +8,10 @@ import numpy as np
 import sys
 
 def solveTSPinstanceQTA(instance,name):
-    cluster_size_threshold = 20
+    cluster_size_threshold = 10
     weight_array = TSP_utilities.readInstance(instance)
     tsp_matrix = TSP_utilities.get_tsp_matrix(weight_array)
-    max_evaluations = 120
+    max_evaluations = 80
     routes_dict = {}
     partitions_dict = {}
 
